@@ -31,16 +31,8 @@
 ***To make the 2048 game accessible to users, I created a Kubernetes service to expose it securely over the internet. Additionally, I could have implemented an Ingress controller for more advanced routing***
 
 ### Step 1: Create an EKS cluster
-![image](https://github.com/gayatrijeebu/Deploying-2048-Game-App-on-Amazon-EKS/assets/97388879/2737a42b-61b8-4d19-be5f-94fce3608317)
-
-
-![image](https://github.com/gayatrijeebu/Deploying-2048-Game-App-on-Amazon-EKS/assets/97388879/b9ae18d6-2d54-4f25-80bb-844014c9badb)
-
 
 ### Step 2: Create an IAM role **eks-cluster-role** with 1 policy attached: AmazonEKSClusterPolicy
-
-![image](https://github.com/gayatrijeebu/Deploying-2048-Game-App-on-Amazon-EKS/assets/97388879/6c29e5f5-5300-48d0-97c6-68bae50dc5dc)
-
 
 ```
 Create another IAM role 'eks-node-grp-role' with 3 policies attached: 
@@ -62,9 +54,6 @@ Click 'Create'. This process will take 10-12 minutes. Wait till your cluster sho
 ```
 
 ### Step 3: Add Node Groups to our cluster
-
-![image](https://github.com/gayatrijeebu/Deploying-2048-Game-App-on-Amazon-EKS/assets/97388879/de3ca09c-3c13-4b6c-85bb-0b84af79ef29)
-
 
 ```
 Now, lets add the worker nodes where the pods can run
@@ -171,13 +160,12 @@ curl a06aa56b81f5741268daca84dca6b4f8-694631959.us-east-1.elb.amazonaws.com:80
 # It will show the 2048 game. You can play. (need to wait for 2-3 minutes for the 
 # setup to be complete)
 ```
-![image](https://github.com/gayatrijeebu/Deploying-2048-Game-App-on-Amazon-EKS/assets/97388879/f78e8609-ee7a-4878-8c27-4bca953fc753)
 
 
 # Thank you
 Thank you for taking the time to work on this tutorial/labs. Let me know your thoughts on this!
 
 
-#### By [Gayatri] (https://github.com/gayatrijeebu)
+#### By [Aboli] (https://github.com/abolishinde2124)
 
 Ensure to follow me on GitHub. Please star/share this repository!
